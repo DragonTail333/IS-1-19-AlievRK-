@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IS_1_19_AlievRK
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -45,6 +45,11 @@ namespace IS_1_19_AlievRK
         {
             Form6 Form6 = new Form6();
             Form6.ShowDialog();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

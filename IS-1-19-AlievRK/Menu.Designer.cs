@@ -1,7 +1,7 @@
 ﻿
 namespace IS_1_19_AlievRK
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -86,7 +86,7 @@ namespace IS_1_19_AlievRK
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // Form1
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -96,8 +96,9 @@ namespace IS_1_19_AlievRK
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "Menu";
             this.Text = "Меню";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
 
         }
