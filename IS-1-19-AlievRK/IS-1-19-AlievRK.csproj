@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ConnectDB">
+      <HintPath>..\ConnectDB\bin\Debug\ConnectDB.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data">
       <HintPath>..\..\..\..\Downloads\v4.5.2\MySql.Data.dll</HintPath>
     </Reference>
