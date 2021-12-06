@@ -20,21 +20,25 @@ namespace IS_1_19_AlievRK
 
         class Connection
         {
+         //строка подключения
          public string stringconnection = "server=caseum.ru;port=33333;user=test_user;database=db_test;password=test_pass;";
-
+            //Метод, который предназначен для ввод информации о строке подключения
             public void ConnectInfo()
             {
                 MessageBox.Show(stringconnection);
             }
         }
+        //Кнопка, для проверки соединения
         private void button1_Click(object sender, EventArgs e)
         {
+            //экземпляр класса
             Connection con = new Connection();
+            //строка подключения
             MySqlConnection conn = new MySqlConnection(con.stringconnection);
             bool result = true;
             try
             {
-                conn.Open();
+                conn.Open(); //Метод соединения с бд.
             }
             catch
             {
@@ -44,13 +48,20 @@ namespace IS_1_19_AlievRK
             {
                 if (result == true)
                 {
+                    //Если соединение провелось успешно, то высветит вот это сообщение
                     MessageBox.Show("Подключение работает отлично!");
                 }
                 else
                 {
+                    //Если соединение провелось успешно, то высветит вот это сообщение
                     MessageBox.Show("Подключение не работает, нужно устронить неполадки!");
                 }
             }
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

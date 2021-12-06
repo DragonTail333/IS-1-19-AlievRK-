@@ -20,16 +20,20 @@ namespace IS_1_19_AlievRK
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Connection conn = new Connection();
-            MySqlConnection connect = new MySqlConnection(conn.stringconnection);
+
+            ConnectDB conn = new ConnectDB(); //Экземпляр класса из библиотеки из другого проекта 
+            MySqlConnection connect = new MySqlConnection(conn.stringconnectionDB); //создаём соединение
             string dateitimeStud = textBox2.Text; //правильно записывать нужно так: yyyy-MM-dd hh:mm:ss иначе ничего не получится.
-            string fioStud = textBox1.Text;
+            string fioStud = textBox1.Text; // зздесь записывать ФИО студента
             string sql = $"INSERT INTO t_PraktStud (fioStud, datetimeStud)  VALUES ('{fioStud}','{dateitimeStud}');";
             int counter = 0;
             try
             {
+                //попытка подключения
                 connect.Open();
+                //экземпляр MySqlComman, который позволит выполнять команду по изменению БД
                 MySqlCommand command1 = new MySqlCommand(sql, connect);
+                //Метод, который позволяет выполнять указанную выше команду 
                 counter = command1.ExecuteNonQuery();
 
             }
@@ -39,9 +43,9 @@ namespace IS_1_19_AlievRK
             }
             finally
             {
-                connect.Close();
+                connect.Close(); //соединение закрывается
 
-                if (counter != 0)
+                if (counter != 0) // Если counter больше 0, то значит мы добавили в базу данных.
                 {
                     MessageBox.Show("Данные добавлены!");
                 }

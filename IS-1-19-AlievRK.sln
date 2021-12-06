@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IS-1-19-AlievRK", "IS-1-19-AlievRK\IS-1-19-AlievRK.csproj", "{887BD744-87DA-4A63-8981-8690C8162E94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectDB", "ConnectDB\ConnectDB.csproj", "{72E4F285-E28B-4A91-B9BB-BF497E9FC90C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{887BD744-87DA-4A63-8981-8690C8162E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{887BD744-87DA-4A63-8981-8690C8162E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{887BD744-87DA-4A63-8981-8690C8162E94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E4F285-E28B-4A91-B9BB-BF497E9FC90C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E4F285-E28B-4A91-B9BB-BF497E9FC90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E4F285-E28B-4A91-B9BB-BF497E9FC90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E4F285-E28B-4A91-B9BB-BF497E9FC90C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
